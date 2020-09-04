@@ -6,14 +6,50 @@
     <title>Proyectos Realizados</title>
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="css/misestilos.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
-<body>
-    <div id="title">
-        <article class="post">
-            <h1 class="style-header">Proyectos Realizados</h1>
-        </article>
-       
-    </div>
+<body class="is-preload">
+    <header>
+        <h1 >Proyectos Realizados</h1>
+    </header>
+    <div id="tabs" class="style-header">
+        <ul class="ul-style">
+          <li class="ul-style"><a href="#tabs-1">Solaris Cluster 3.2</a></li>
+          <li><a href="#tabs-2">Solución de Respaldo</a></li>
+          <li><a href="#tabs-3">ERP: WebInnovative</a></li>
+          <li><a href="#tabs-4">Replicación VMWare</a></li>
+          <li><a href="#tabs-5">Sistema de prevención de pérdida de datos </a></li>
+        </ul>
+        <div id="tabs-1" class="style-header">
+          <p>Actividades realizadas: instalación y configuración del sistema operativo Solaris 10, Creación de zonas en San Switch, Creación y configuración de lun el raid 5 en Storage Sun Orcle, instalación y configuración de Sun Cluster, creación del servicio de datos para Oracle, migración de la base de datos.</p>
+        </div>
+        <div id="tabs-2">
+          <p>Actividades realizadas: Implementación de software de respaldo Backup Exec, instalación y configuración de la herramienta, análisis e implementación de políticas de respaldo (tipos de backup full, incremental, diferencial). Replicacion a cinta, Expiración de backups, Conversión de servidores físicos a virtuales, Dashboard y envió de alertas por correo electrónico.</p>
+        </div>
+        <div id="tabs-3">
+          <p>Actividades realizadas:  toma de requerimientos,  análisis y desarrollo de los módulos de ventas, inventario, planillas, facturación, bancos  y Contabilidad, Reportes. </p>
+          
+        </div>
+        <div id="tabs-4">
+            <p>Actividades realizadas: Replicación de máquinas virtuales mediante vSphere Replication. En ESXi 6.5</p>
+            
+        </div>
+        <div id="tabs-5">
+            <p>Actividades realizadas: Instalación y configuración del motor de base de datos Oracle 11g, Instalación y configuración  del software Veritas Data Insight, instalación del agente de DLP en cada estación de trabajo, creación de políticas para el acceso, uso y retención de la información. Protección de la información confidencial del uso y la exposición no autorizados. Configuración y pruebas de alertas del acceso no autorizado. Capacitación al personal sobre el uso de la herramienta.</p>
+            
+        </div>
+      </div>
     
+        
+    <script>
+        
+        $( function() {
+          $( "#tabs" ).tabs();
+        } );
+        
+    </script> 
 </body>
+
 </html>
