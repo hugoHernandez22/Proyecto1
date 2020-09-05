@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="css/misestilos.css" />
     <title>Formulario</title>
@@ -13,20 +14,39 @@
         <h1 >Contacto</h1>
     </header>
     <div class="style-div">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre">
+        <form id="form">
+        <label for="nombre" >Nombre</label>
+        <input type="text" id="nombre" required  oninvalid="this.setCustomValidity('Ingrese nombre')"
+        oninput="this.setCustomValidity('')">
         <label for="telefono">Telefono</label>
-        <input type="text" name="teléfono">
+        <input type="tel" name="teléfono" required  oninvalid="this.setCustomValidity('Ingrese teléfono')"
+        oninput="this.setCustomValidity('')">
         <label for="email">Email</label>
-        <input type="email" name="email" >
+        <input type="email" name="email" required  >
+  
         <label for="razon">Razón</label>
-        <textarea name="razon" id="razon" cols="30" rows=3></textarea>
+        <textarea name="razon" id="razon" cols="30" rows=3 required  oninvalid="this.setCustomValidity('Ingrese una razón')"
+        oninput="this.setCustomValidity('')"></textarea>
+        <span id="count" class="style-span"></span>
+        
+       
         <br>
         <button id="enviar" class="button button-primary">Enviar</button>
         <button id="cancelar" class="button button-warning">Cancelar</button>
+     </form>
         
         
     </div>
-  
+    <script>
+        var el_t = document.getElementById('razon');
+        var el_c = document.getElementById('count');
+        el_c.innerHTML = length;
+        el_t.onkeyup = function () {
+        document.getElementById('count').innerHTML = ("No. Caracteres: "+(this.value.length));
+        };
+        $(document).ready(function() {
+            $("#form").validate();
+        });
+    </script>
 </body>
 </html>

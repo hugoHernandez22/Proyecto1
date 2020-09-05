@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <title>Referencias</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.11/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.11/js/jquery.dataTables.js"></script>
+    <link rel="stylesheet" href="css/misestilos.css" />
+</head>
+<body>
+    <div class="container style-container">
+        <table id="grid" class="table  table-bordered dt-responsive nowrap hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>No.</th>
+                    <th>Nombre</th>
+                    <th>Teléfono</th>
+                    <th>Correo</th>
+                    <th>Parentezco</th>
+                </tr>
+            </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Edgar Sanchez</td>
+                <td>5873 5038</td>
+                <td>edg.sanchez@outlook.com</td>
+                <td>Amigo</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Gabriel Gutierrez</td>
+                <td>5872 2864</td>
+                <td>gabriel.gutierrez@envaseal.com.gt</td>
+                <td>Compañero de trabajo</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Bryan Rodriguez</td>
+                <td>5869 2866</td>
+                <td></td>
+                <td>Amigo</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Jonathan Sajbin</td>
+                <td>5867 2864</td>
+                <td>jonatan34@gmail.com.gt</td>
+                <td>Ex-Compañero de trabajo</td>
+            </tr><tr>
+                <td>5</td>
+                <td>Dámaris Palacios</td>
+                <td>5872 2864</td>
+                <td></td>
+                <td>Ex-Compañera de trabajo</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Kevin García</td>
+                <td>5843 6564</td>
+                <td>kgarcia@gmail.com</td>
+                <td>Ex-Compañero de trabajo</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Jose Sum</td>
+                <td>5823 2864</td>
+                <td></td>
+                <td>Ex-Compañero de trabajo</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Julio Mendez</td>
+                <td>5872 2863</td>
+                <td>jmendez@exanet.com.gt</td>
+                <td>Ex-jefe</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Agusto Lopez</td>
+                <td>2472 2864</td>
+                <td>alopez@exanet.com.gt</td>
+                <td>Ex-jefe</td>
+            </tr><tr>
+                <td>10</td>
+                <td>Edwin Gonzalez</td>
+                <td>5467 2864</td>
+                <td>egonzalez@giganet.gt</td>
+                <td>Ex-jefe</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Jordi Lopez</td>
+                <td>5672 2864</td>
+                <td>jklopez@exanet.com.gt</td>
+                <td>Ex-Compañero de trabajo</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Maycol Gonzalez</td>
+                <td>5823 2864</td>
+                <td></td>
+                <td>Amigo</td>
+            </tr><tr>
+                <td>13</td>
+                <td>Oscar Torres</td>
+                <td>6672 2864</td>
+                <td></td>
+                <td>Compañero de trabajo</td>
+            </tr><tr>
+                <td>14</td>
+                <td>Carlos Leal</td>
+                <td>2472 2864</td>
+                <td>cleal@hisn.com.gt</td>
+                <td>Jefe</td>
+            </tr><tr>
+                <td>15</td>
+                <td>Danie Lago</td>
+                <td>5272 2864</td>
+                <td></td>
+                <td>Amigo/td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>
+  <script>
+      
+      $(document).ready(function () {
+        $('#grid').DataTable({
+            
+            "aLengthMenu": [[5], [5, "All"]],
+            "iDisplayLength": 5,
+            "lengthMenu":     "Mostrar _MENU_ entries",
+            "language": {
+                "info": "Pagina _START_ de _END_ ",
+                "search":  "Buscar",
+                "paginate": {
+                    "first":      "Primera",
+                    "last":       "Última",
+                    "next":       "Siguiente",
+                    "previous":   "Anterior"
+                },
+                "lengthMenu":     "Mostrar _MENU_ Referencias",
+            }
+        }
+
+        );
+    });
+  </script>
+</body>
+</html>
